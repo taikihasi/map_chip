@@ -19,8 +19,10 @@ public:
 	void draw();
 
 private:
+	// マップの描画
+	void drawMap(int offsetX , int offsetY);
 	// マップチップ編集用カーソルの表示
-	
+	void drawCursor();
 
 	// マップチップの数を取得する
 	int chipNumX();
@@ -29,7 +31,7 @@ private:
 
 	// マップデータの入出力
 	void outputDate(); // マップのデータを出力する
-	void inputDate();  // マップのデータを読み込む
+	void readDate();  // マップのデータを読み込む
 
 private:
 	// グラフィックデータのハンドル
